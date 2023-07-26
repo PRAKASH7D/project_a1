@@ -47,8 +47,10 @@
 
         #background_img {
             width: 100%;
+            max-width: 2000px;
             height: auto;
             background-size: cover;
+
 
         }
 
@@ -81,8 +83,8 @@
         }
         @media(max-width:1669px) {
             .location_row1 {
-                margin-left: 80px;
-                margin-right: 80px;
+                margin-left: 70px;
+                margin-right: 70px;
             }
         }
         @media(max-width:1362px) {
@@ -91,10 +93,15 @@
                 margin-right: 50px;
             }
         }
-        @media(max-width:1020px) {
+        @media(max-width:1000px) {
             .location_row1 {
                 margin-left: 0px;
                 margin-right: 0px;
+            }
+        }
+        @media(max-width:400px) {
+            .cont {
+                height: 100px;
             }
         }
 
@@ -135,25 +142,30 @@
         }
 
         .img {
-            width: 400px;
+            width: 100%;
+            max-width: 400px;
             height: 250px;
             background-size: cover;
-            margin: 15px;
+            margin-bottom: 10px;
+            overflow: hidden;
         }
 
         .cont {
             text-align: center;
             font-size: 18px;
             background-color: white;
-            height: 300px;
+            width: 100%;
+            max-width: 400px;
+            height: 288px;
             justify-content: end;
+            padding-top: 16px;
             padding-bottom: 8px;
+            padding-right: 16px;
+            padding-left: 16px;
             margin-left: 20px;
             margin-right: 20px;
             margin-top: 15px;
             margin-bottom: 15px;
-
-            box-shadow: 0px 0px 6px #aaa;
         }
 
         .cont a {
@@ -169,7 +181,7 @@
 
 <body>
     <div class="navbar">
-        <a id="nav_0st" href="index.html">HOME</a>
+        <a id="nav_0st" href="p1_home.html">HOME</a>
         <a id="nav_1st" href="p2_img1.html">TRIPS</a>
         <a id="nav_2st" href="p2_about.html">ABOUT</a>
         <a id="nav_3st" href="p2_contact.html">CONTACT</a>
